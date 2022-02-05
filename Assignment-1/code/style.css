@@ -1,1 +1,90 @@
 
+.parent_container{
+    width:auto;;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+.orange, .blue, .pink{
+    display: flex;
+}
+.o_container{
+   
+    flex-direction: row;
+    flex:1 0 auto;
+    height: 200px;
+    margin:20px;
+    background-color: orange;
+}
+.p_container{
+    flex:1 0 auto;
+    height: 200px;
+    margin:20px;
+    background-color: rgb(185, 45, 92);
+}
+.b_container{
+    flex-direction: row;
+    flex:1 0 auto;
+    height: 200px;
+    margin:20px;
+    background-color: blue;
+}
+@media screen and (min-device-width:1024px){
+    /*....................min width : 1024...............*/
+    .o_container{
+   
+        flex-direction: row;
+        flex:1 0 auto;   
+    }
+    .p_container{
+        flex:1 0 auto;
+    }
+    .b_container{
+        flex-direction: row;
+        flex:1 0 auto;
+    }
+
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:1023px) {
+
+     /*....................min width : 765px and max width: 1023px...............*/
+
+     .o_container{
+   
+        flex-direction: row;
+        flex:1 0 auto;
+    }
+    .p_container{
+        flex:1 0 auto;
+    }
+    .blue{
+        flex-direction: column;
+    }
+    .b_container{
+        flex:1 0 auto;
+    }
+
+}
+
+@media screen and (min-device-width:320px) and (max-device-width:767px){
+
+    /*....................min width : 320px and max width: 764px...............*/
+    .orange{
+        flex-direction: column;
+    }
+    .o_container{
+        flex:1 0 auto;
+    }
+    .p_container{
+        flex:1 0 auto;
+    }
+    .blue{
+        flex-direction: column;
+    }
+    .b_container{
+        flex:1 0 auto;
+    }
+
+}
+
