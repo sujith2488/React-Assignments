@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 const employee = {
-  name: 'Tom',
+  name: 'Ram',
   location: 'New York',
   bloodGroup: 'B+',
   age: 28,
